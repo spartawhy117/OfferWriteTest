@@ -78,7 +78,10 @@ void CreateCore(map<int, PBT>& blank_value,char* str)
 			num[i] = str[i + 1];
 
 		num[dititals] = '\0';
-		return atoi(num);
+		 i = atoi(num);
+		 delete[] num;
+		 num == nullptr;
+		return i;
 	};
 	int value = digitsChar();
 
@@ -151,7 +154,11 @@ PBT CreateBinTree(char *str)
 			num[i] = str[i+1];
 
 		num[dititals] = '\0';
-		return atoi(num);
+
+		i = atoi(num);
+		delete[] num;
+		num == nullptr;
+		return i;
 	};
 
 	root = new BinTree(digitsChar());
