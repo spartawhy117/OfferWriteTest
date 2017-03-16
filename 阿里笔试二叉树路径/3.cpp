@@ -12,7 +12,7 @@ typedef struct BinTree {
 	{
 		
 	}
-	//Éî¿½±´
+	//ISSUES: Éî¿½±´
 	BinTree(const BinTree* node)
 		:v(node->v),l(nullptr),r(nullptr)
 	{
